@@ -65,3 +65,7 @@ graph TD
   - [ ] `requirements.txt` - 依賴包定義
   - [ ] `tools.py` - 自訂工具庫
   - [ ] `simple_agent.py` - ReAct 核心邏輯
+
+## 最近進度
+
+- 2026-07-22：改善影片清單工具的可攜路徑與網址清單輸出，新增 EP01 影片資料，並登記 Obsidian L3 專案筆記位置；Python 語法驗證通過。

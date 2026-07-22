@@ -9,8 +9,12 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 # Paths
-urls_file = r"c:\2026AI_agent\AI_AgentEP01_用 Agent 來學習 Agent\sensebar_ai_urls.txt"
-sub_dir = r"c:\2026AI_agent\AI_AgentEP01_用 Agent 來學習 Agent\subtitles"
+target_dir = r"c:\2026AI_agent\AI_AgentEP01_用 Agent 來學習 Agent"
+if not os.path.exists(target_dir):
+    target_dir = os.path.dirname(os.path.abspath(__file__))
+
+urls_file = os.path.join(target_dir, "sensebar_ai_urls.txt")
+sub_dir = os.path.join(target_dir, "subtitles")
 os.makedirs(sub_dir, exist_ok=True)
 
 # Read URLs

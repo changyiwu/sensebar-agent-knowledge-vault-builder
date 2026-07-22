@@ -69,8 +69,21 @@ for m in matches:
     escaped_title = m['title'].replace('|', '\\|')
     md_content += f"| {escaped_title} | [{m['url']}]({m['url']}) | {', '.join(m['matched'])} |\n"
 
-output_path = r"c:\2026AI_agent\AI_AgentEP01_用 Agent 來學習 Agent\sensebar_ai_videos.md"
+# Determine target directory
+target_dir = r"c:\2026AI_agent\AI_AgentEP01_用 Agent 來學習 Agent"
+if not os.path.exists(target_dir):
+    target_dir = os.path.dirname(os.path.abspath(__file__))
+
+output_path = os.path.join(target_dir, "sensebar_ai_videos.md")
 with open(output_path, "w", encoding="utf-8") as f:
     f.write(md_content)
 
 print(f"成功儲存影片清單至：{output_path}")
+
+# Also update the urls list file
+urls_path = os.path.join(target_dir, "sensebar_ai_urls.txt")
+urls_content = "".join([f"{m['url']}\n" for m in matches])
+with open(urls_path, "w", encoding="utf-8") as f:
+    f.write(urls_content)
+
+print(f"成功儲存網址清單至：{urls_path}")

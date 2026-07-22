@@ -6,6 +6,7 @@
 
 | 影片標題 | 網址 | 匹配關鍵字 |
 | --- | --- | --- |
+| AI Agent基本功EP01:用Agent來學習Agent_一個 GitHub repo，複製我的整套 AI 工作流到你的 Agent | [https://www.youtube.com/watch?v=3s2Q1nViZ1w](https://www.youtube.com/watch?v=3s2Q1nViZ1w) | agent |
 | AntiGravity 基本功 EP07:一句話生成 Padlet 課程牆_分區、投票、AI 插圖全自動完成 | [https://www.youtube.com/watch?v=wrSYyOxf7n4](https://www.youtube.com/watch?v=wrSYyOxf7n4) | antigravity |
 | OpenCode 基本功EP04:免費組裝你的 Agent 大軍，無限解放 Token | [https://www.youtube.com/watch?v=-cplfCsPJXs](https://www.youtube.com/watch?v=-cplfCsPJXs) | opencode, agent |
 | Antigravity 基本功 EP06:全面代理你的 Google Classroom_派作業、收作業、批改一次搞定：AI × Google Classroom 完整教學 | [https://www.youtube.com/watch?v=vYb87aqvBuE](https://www.youtube.com/watch?v=vYb87aqvBuE) | antigravity |

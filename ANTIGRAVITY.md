@@ -42,4 +42,7 @@
 ## 部署與版本控制
 *   **分支**：`main`（預設）
 *   **儲存庫**：GitHub 公開儲存庫 `changyiwu/sensebar-agent-knowledge-vault-builder`。
+*   **Obsidian 專案工作流程筆記 (L3)**：
+    *   放置位置：Obsidian Vault 根目錄之專案資料夾內 `<vault>/<專案資料夾名>/`
+    *   筆記檔名：`專案工作流程.md`（完整相對路徑：`sensebar-agent-knowledge-vault-builder/專案工作流程.md`）
 
