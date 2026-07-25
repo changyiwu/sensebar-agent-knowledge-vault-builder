@@ -68,7 +68,6 @@ sensebar-agent-knowledge-vault-builder/
 ├─ README.md                  # 專案導覽與概念說明
 ├─ agents.md                  # 本檔：專案藍圖
 ├─ handoff.md                 # 交接檔（每次收工必更新）
-├─ ANTIGRAVITY.md
 └─ .gitignore
 ```
 
@@ -89,6 +88,21 @@ sensebar-agent-knowledge-vault-builder/
 - 所有回應與文件使用繁體中文
 - 修改前先檢查 Git 狀態，只處理本次任務相關變更
 - 不提交 API key、登入 cookie、下載憑證或私人字幕來源
+
+## 字幕清理規則
+
+`download_all_subs.py` 以 `yt-dlp` 下載 VTT 字幕後，必須依序執行下列清洗步驟：
+
+1. 移除 VTT 元資料檔頭與時間戳記（如 `00:00:01.000 --> 00:00:03.000`）
+2. 移除 HTML／XML 標籤
+3. **滾動式去重**：YouTube 自動字幕會有重複的滾動行，需以連續行去重演算法生成流暢段落
+4. 輸出為 Markdown，將影片標題作為 H1，並包含原始 YouTube 連結
+
+## 知識維護規範
+
+- `01-Clippings/` 下的原始字幕檔**不可直接修改**（外部輸入）
+- 知識庫整理成果輸出至 `02-知識庫/`，並主動更新其 `index.md` 與 `log.md`
+- Vault 實際結構為編號四層：`00-每日筆記/`、`01-Clippings/`、`02-知識庫/`、`03-創作庫/`
 
 ## 最近進度
 
