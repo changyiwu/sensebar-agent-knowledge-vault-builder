@@ -81,6 +81,18 @@ sensebar-agent-knowledge-vault-builder/
 | L2 | GitHub | https://github.com/changyiwu/sensebar-agent-knowledge-vault-builder （公開） | 指定時 |
 | L3 | Obsidian | `sensebar-agent-knowledge-vault-builder/專案工作流程.md` | 有需要時 |
 
+## 三個檔案的職責（依「時效性」分家，不是依「詳細程度」）
+
+| 檔案 | 時效 | 寫入方式 | 放什麼 |
+|------|------|---------|--------|
+| `handoff.md` | **只對下一個 session 有效**，過期即丟 | 每次收工整份重寫 | 做到哪、下一步、**這次**的暫時 workaround |
+| `agents.md`（本檔） | **長期有效**，每個 session 都適用 | 只有規則本身變了才改 | 目標、路線圖、常設規則、結構 |
+| Obsidian／`git log` | **歷史**：發生過什麼、為什麼 | 只增不刪 | 決策紀錄、踩坑完整版、逐次進度 |
+
+驗收標準：**`handoff.md` 整份刪掉，不應損失任何長期資訊**——會的話代表該升級進本檔卻沒升級。
+
+**本檔不要出現的東西**：❌ `## 最近進度`／逐次工作紀錄、❌ 決策理由與踩坑完整版。2026-08-03 移除了 `## 最近進度`，內容逐條比對後已在 L3 筆記的〈🗓️ 最近更動紀錄〉——**是主動移除，不是遺漏，不要補回來**。踩過的坑只把**結論**收斂成一條祈使句寫進〈工作約定〉，原因留 L3。
+
 ## 工作約定
 
 - 任何 Agent、任何電腦：**開工先讀 `handoff.md`，收工必更新 `handoff.md`**
@@ -103,8 +115,3 @@ sensebar-agent-knowledge-vault-builder/
 - `01-Clippings/` 下的原始字幕檔**不可直接修改**（外部輸入）
 - 知識庫整理成果輸出至 `02-知識庫/`，並主動更新其 `index.md` 與 `log.md`
 - Vault 實際結構為編號四層：`00-每日筆記/`、`01-Clippings/`、`02-知識庫/`、`03-創作庫/`
-
-## 最近進度
-
-- 2026-07-22：改善影片清單工具的可攜路徑與網址清單輸出，新增 EP01 影片資料，並登記 Obsidian L3 專案筆記位置；Python 語法驗證通過。
-- 2026-07-24：專案藍圖改用標準範本格式（Roadmap 的 mermaid 圖改為 checklist 分階段，補上資料夾結構與同步層級表）。
