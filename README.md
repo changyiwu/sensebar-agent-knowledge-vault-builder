@@ -11,11 +11,11 @@
 
 ```mermaid
 graph TD
-    Channel[@sensebar 頻道] -->|1. extract_videos.py| VideoList[篩選後的影片清單與 URL]
-    VideoList -->|2. download_all_subs.py| TempVTT[原始 VTT 字幕]
-    TempVTT -->|3. VTT 清理引擎| CleanMD[去重後的 Markdown 檔案]
-    CleanMD -->|4. Obsidian 筆記庫| ThreeLayer[三層式筆記庫結構]
-    ThreeLayer -->|5. 每週 Agent 任務| KB[結構化知識庫]
+    Channel["sensebar 頻道"] -->|"1. extract_videos.py"| VideoList["篩選後的影片清單與 URL"]
+    VideoList -->|"2. download_all_subs.py"| TempVTT["原始 VTT 字幕"]
+    TempVTT -->|"3. VTT 清理引擎"| CleanMD["去重後的 Markdown 檔案"]
+    CleanMD -->|"4. Obsidian 筆記庫"| ThreeLayer["三層式筆記庫結構"]
+    ThreeLayer -->|"5. 每週 Agent 任務"| KB["結構化知識庫"]
 ```
 
 ---
@@ -62,8 +62,8 @@ graph TD
 ## 📄 本儲存庫中的腳本
 
 腳本位於工作區根目錄：
-*   [extract_videos.py](file:///c:/Users/chang/我的雲端硬碟/agents/antigravity/sensebar-agent-knowledge-vault-builder/extract_videos.py)
-*   [download_all_subs.py](file:///c:/Users/chang/我的雲端硬碟/agents/antigravity/sensebar-agent-knowledge-vault-builder/download_all_subs.py)
+*   [extract_videos.py](extract_videos.py)
+*   [download_all_subs.py](download_all_subs.py)
 
 ---
 
