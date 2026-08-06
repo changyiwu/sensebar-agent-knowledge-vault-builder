@@ -6,7 +6,9 @@
 
 透過「動手實作」與「循序漸進」的方式，從零開始理解並學習 AI Agent 的核心概念與設計模式。同時包含 Sensebar 影片字幕擷取工具，把外部影音內容整理成可用的知識素材。
 
-開發環境：Python 3.10+，核心依賴 `google-generativeai`（Gemini-2.5-flash / 1.5-flash 作為大腦）、`python-dotenv`、`colorama`。
+開發環境：Python 3.10+，核心依賴 `google-generativeai`（Gemini-2.5-flash / 1.5-flash 作為大腦）、`python-dotenv`、`colorama`。這三個是 Stage 1 的**計畫**依賴，尚無程式碼 import，因此在 `requirements.txt` 內維持註解狀態。
+
+本 repo fork 自 <https://github.com/mathruffian-dot/sensebar-agent-knowledge-vault-builder>（未設 upstream remote）。Stage 1～5 路線圖沿用 upstream，其中 `tools.py`、`simple_agent.py` 在 upstream 也**從未實作**——查證過 upstream 全部檔案與本 repo 全 git 歷史皆無此二檔。**Stage 1 是待辦，不是已完成，不要再把它勾起來。**
 
 ## 關鍵時程
 
@@ -14,16 +16,16 @@
 
 ## 目標與路線圖
 
-### Stage 1：基礎 ReAct（Reasoning & Action）Agent — 已完成
+### Stage 1：基礎 ReAct（Reasoning & Action）Agent — 當前目標
 
 從零手寫 ReAct 循環，理解 Agent 如何自主思考、選擇工具、觀察結果。
 
-- [x] 設計 System Prompt 讓大模型理解 ReAct 規則（Thought → Action → Observation）
-- [x] 提供簡單的自訂 Python 函數作為 Tool（如計算機、模擬搜尋）
-- [x] 實作 Agent Loop 控制器，解析模型輸出並調用 Tool
-- [x] 使用彩色終端輸出，視覺化展示思考過程
+- [ ] 設計 System Prompt 讓大模型理解 ReAct 規則（Thought → Action → Observation）
+- [ ] 提供簡單的自訂 Python 函數作為 Tool（如計算機、模擬搜尋）
+- [ ] 實作 Agent Loop 控制器，解析模型輸出並調用 Tool
+- [ ] 使用彩色終端輸出，視覺化展示思考過程
 
-### Stage 2：工具與函數調用（Function Calling）— 當前目標
+### Stage 2：工具與函數調用（Function Calling）
 
 從正則表達式解析／純文字 Prompt 轉換成原生的 Function Calling 機制。
 
