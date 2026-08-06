@@ -6,7 +6,9 @@
 
 透過「動手實作」與「循序漸進」的方式，從零開始理解並學習 AI Agent 的核心概念與設計模式。同時包含 Sensebar 影片字幕擷取工具，把外部影音內容整理成可用的知識素材。
 
-開發環境：Python 3.10+，核心依賴 `google-generativeai`（Gemini-2.5-flash / 1.5-flash 作為大腦）、`python-dotenv`、`colorama`。這三個是 Stage 1 的**計畫**依賴，尚無程式碼 import，因此在 `requirements.txt` 內維持註解狀態。
+開發環境：Python 3.10+，核心依賴 `google-genai`（Gemini 作為大腦）、`python-dotenv`、`colorama`。這三個是 Stage 1 的**計畫**依賴，尚無程式碼 import，因此在 `requirements.txt` 內維持註解狀態。
+
+> **SDK 一律用 `google-genai`（`from google import genai`）**，不要用 upstream 寫的 `google-generativeai`——後者是已淘汰的舊版，兩者 API 不相容。網路上多數 ReAct／Function Calling 教學仍是舊版寫法，照抄會跑不起來。
 
 本 repo fork 自 <https://github.com/mathruffian-dot/sensebar-agent-knowledge-vault-builder>（未設 upstream remote）。Stage 1～5 路線圖沿用 upstream，其中 `tools.py`、`simple_agent.py` 在 upstream 也**從未實作**——查證過 upstream 全部檔案與本 repo 全 git 歷史皆無此二檔。**Stage 1 是待辦，不是已完成，不要再把它勾起來。**
 
