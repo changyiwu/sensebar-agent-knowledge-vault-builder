@@ -53,8 +53,10 @@
 
 - [x] `download_all_subs.py`、`extract_videos.py` 改為可攜路徑（原始固定目錄不存在時改用專案目錄）
 - [x] 影片擷取同步更新 Markdown 與 URL 清單，加入 EP01 影片
-- [ ] 在目前專案目錄實際執行擷取流程，確認字幕與清單輸出
-- [ ] 補齊 `requirements.txt` 與可重複執行的驗證流程
+- [x] 在專案目錄實際執行 `extract_videos.py`，確認影片清單與 URL 輸出
+- [x] 補齊 `requirements.txt`（依賴定義）
+- [ ] 實際執行 `download_all_subs.py`，確認字幕下載與清洗輸出
+- [ ] 建立可重複執行的驗證流程
 
 ## 資料夾結構
 
@@ -65,13 +67,14 @@ sensebar-agent-knowledge-vault-builder/
 ├─ sensebar_ai_videos.md      # 影片清單（Markdown）
 ├─ sensebar_ai_urls.txt       # 影片網址清單
 ├─ subtitles/                 # 下載的字幕
+├─ requirements.txt           # 依賴定義
 ├─ README.md                  # 專案導覽與概念說明
 ├─ agents.md                  # 本檔：專案藍圖
 ├─ handoff.md                 # 交接檔（每次收工必更新）
 └─ .gitignore
 ```
 
-> 尚未建立：`requirements.txt`（依賴定義）、`tools.py`（自訂工具庫）、`simple_agent.py`（ReAct 核心邏輯）。
+> 尚未建立：`tools.py`（自訂工具庫）、`simple_agent.py`（ReAct 核心邏輯）。
 
 ## 同步層級（本專案初始化至第 3 層級）
 
@@ -100,6 +103,8 @@ sensebar-agent-knowledge-vault-builder/
 - 所有回應與文件使用繁體中文
 - 修改前先檢查 Git 狀態，只處理本次任務相關變更
 - 不提交 API key、登入 cookie、下載憑證或私人字幕來源
+- 新電腦開工先跑 `pip install -r requirements.txt`；兩支腳本依賴的是 `yt_dlp` **Python 模組**，只裝 CLI（如 `uv tool install`）不算數
+- 寫 Markdown 的 mermaid 圖時，節點與邊的標籤一律加雙引號，且不要出現 `@`（Mermaid v11 起是保留語法，會讓整張圖不渲染）
 
 ## 字幕清理規則
 

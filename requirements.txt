@@ -1,0 +1,17 @@
+# sensebar-agent-knowledge-vault-builder 依賴定義
+#
+# 安裝：
+#   pip install -r requirements.txt
+# 或：
+#   uv pip install -r requirements.txt
+
+# --- 素材工具線（extract_videos.py / download_all_subs.py）---
+# 目前 repo 內唯一實際被 import 的第三方套件
+yt-dlp>=2026.7.4
+
+# --- Agent 學習線（Stage 1~2，程式碼尚未進 repo）---
+# agents.md 宣告的核心依賴。等 simple_agent.py / tools.py 進 repo 後再取消註解，
+# 避免現在就為了沒有任何程式碼 import 的套件拖進一整包 SDK。
+# google-generativeai>=0.8.0
+# python-dotenv>=1.0.0
+# colorama>=0.4.6

@@ -6,6 +6,20 @@
 
 | 影片標題 | 網址 | 匹配關鍵字 |
 | --- | --- | --- |
+| 一份教材生出 30 種遊戲 AI Agent 全自動操作 Wordwall | [https://www.youtube.com/watch?v=SDnWhL2RSag](https://www.youtube.com/watch?v=SDnWhL2RSag) | agent |
+| AI Agent 基本功EP07:需求探索四象限法，釐清專案需求的最後一塊拼圖 | [https://www.youtube.com/watch?v=nL4OAYdJ3Ew](https://www.youtube.com/watch?v=nL4OAYdJ3Ew) | agent |
+| Claude Code 基本功 EP14:Remote Control 完全解放，手機、筆電、電腦同步協作 | [https://www.youtube.com/watch?v=s0rbb_NjLHQ](https://www.youtube.com/watch?v=s0rbb_NjLHQ) | claude |
+| AI Agent 基本功 EP06 跨 Agent、跨電腦協作同一個專案，設定觀念一次到位 | [https://www.youtube.com/watch?v=mnFdJaAmeUM](https://www.youtube.com/watch?v=mnFdJaAmeUM) | agent |
+| 使用Agent來打破工具的框架_設計遊戲_2026TCCA年會 | [https://www.youtube.com/watch?v=pI17KFtLq-E](https://www.youtube.com/watch?v=pI17KFtLq-E) | agent |
+| OpenCode 基本功 EP06 各種模型正確用法全解析，最強開源模型 Kimi K3 正式登場 | [https://www.youtube.com/watch?v=rMANAgFcmkg](https://www.youtube.com/watch?v=rMANAgFcmkg) | opencode |
+| AI Agent基本功 EP05:三層一次講清楚 搞定 技能/全域/專案 | [https://www.youtube.com/watch?v=b4gIauc_hxo](https://www.youtube.com/watch?v=b4gIauc_hxo) | agent |
+| AI Agent 基本功 EP04：連接外部工具，MCP 與連接器一張地圖講清楚 | [https://www.youtube.com/watch?v=-kIzGOf0bZA](https://www.youtube.com/watch?v=-kIzGOf0bZA) | agent |
+| AI Agent 教學應用：予 AI 講台語，免費開源專案一鍵生成台語教材 | [https://www.youtube.com/watch?v=DESUN1Smf94](https://www.youtube.com/watch?v=DESUN1Smf94) | agent |
+| GPT Codex 基本功 EP05：Codex 超好用的五個隱藏功能 | [https://www.youtube.com/watch?v=GDL5IMXqEKo](https://www.youtube.com/watch?v=GDL5IMXqEKo) | codex |
+| AI Agent 基本功 EP03：一句話讓 AI 幫你讀檔、寫程式、上網、做出成品 | [https://www.youtube.com/watch?v=b8YgyYGjJEU](https://www.youtube.com/watch?v=b8YgyYGjJEU) | agent |
+| OpenCode 基本功 EP05：免費 Big Pickle 與最強 GLM 5 2 | [https://www.youtube.com/watch?v=F_eMaWlxAtU](https://www.youtube.com/watch?v=F_eMaWlxAtU) | opencode |
+| AI Agent 基本功 EP02：學習 Agent 必懂的核心觀念與初始化設定 | [https://www.youtube.com/watch?v=8nwjYouFJoE](https://www.youtube.com/watch?v=8nwjYouFJoE) | agent |
+| Anti gravity EP08：Agent代理 複製你的聲音_別再付費買 AI 語音了！一行指令免費複製你的聲音 | [https://www.youtube.com/watch?v=EVREOkL4wkc](https://www.youtube.com/watch?v=EVREOkL4wkc) | agent |
 | AI Agent基本功EP01:用Agent來學習Agent_一個 GitHub repo，複製我的整套 AI 工作流到你的 Agent | [https://www.youtube.com/watch?v=3s2Q1nViZ1w](https://www.youtube.com/watch?v=3s2Q1nViZ1w) | agent |
 | AntiGravity 基本功 EP07:一句話生成 Padlet 課程牆_分區、投票、AI 插圖全自動完成 | [https://www.youtube.com/watch?v=wrSYyOxf7n4](https://www.youtube.com/watch?v=wrSYyOxf7n4) | antigravity |
 | OpenCode 基本功EP04:免費組裝你的 Agent 大軍，無限解放 Token | [https://www.youtube.com/watch?v=-cplfCsPJXs](https://www.youtube.com/watch?v=-cplfCsPJXs) | opencode, agent |
